@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuta's Portfolio - Vibe Coding Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="brand-title">Yuta's Portfolio</h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    <span class="typing-text">Hello, I'm Yuta</span>
+                </h2>
+                <p class="hero-description">
+                    Vibe Codingの手法で開発した実用的なWebアプリケーションと、
+                    <br>AIを活用して制作した動画コンテンツを紹介します。
+                </p>
+                <div class="hero-cta">
+                    <a href="#apps" class="cta-button primary">
+                        <span>作品を見る</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-element" data-speed="1">💻</div>
+                    <div class="floating-element" data-speed="2">🚀</div>
+                    <div class="floating-element" data-speed="1.5">⚡</div>
+                    <div class="floating-element" data-speed="0.8">🎯</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apps" class="apps">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">01</span>
+                    <span class="title-text">Web Applications</span>
+                </h2>
+                
+                <div class="apps-grid">
+                    <article class="app-card" data-app="blood-lab">
+                        <div class="app-image">
+                            <div class="app-icon">🩸</div>
+                            <div class="app-overlay">
+                                <a href="https://yuta-884.github.io/blood-lab-flashcards/" target="_blank" class="app-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/yuta-884/blood-lab-flashcards" target="_blank" class="app-github">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Blood Lab Flashcards</h3>
+                            <p class="app-description">
+                                医療従事者向けの検査値暗記フラッシュカードアプリ。PWA対応でオフライン利用可能、ダークモード、音声フィードバック機能付き。
+                            </p>
+                            <div class="app-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">PWA</span>
+                            </div>
+                            <div class="app-features">
+                                <div class="feature">
+                                    <i class="fas fa-download"></i>
+                                    <span>オフライン対応</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-moon"></i>
+                                    <span>ダークモード</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-volume-up"></i>
+                                    <span>音声フィードバック</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="app-card" data-app="emoji-memory">
+                        <div class="app-image">
+                            <div class="app-icon">🎮</div>
+                            <div class="app-overlay">
+                                <a href="https://yuta-884.github.io/emoji-memory/" target="_blank" class="app-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/yuta-884/emoji-memory" target="_blank" class="app-github">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Emoji Memory Game</h3>
+                            <p class="app-description">
+                                4×4グリッドで絵文字のペアを見つけるメモリーゲーム。タイマー、移動回数カウンター、ハイスコア記録機能を搭載。
+                            </p>
+                            <div class="app-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Vite</span>
+                            </div>
+                            <div class="app-features">
+                                <div class="feature">
+                                    <i class="fas fa-stopwatch"></i>
+                                    <span>タイマー機能</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>ハイスコア</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>レスポンシブ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="app-card" data-app="todo-app">
+                        <div class="app-image">
+                            <div class="app-icon">✅</div>
+                            <div class="app-overlay">
+                                <a href="https://yuta-884.github.io/todo-app/" target="_blank" class="app-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/yuta-884/todo-app" target="_blank" class="app-github">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">Todo App</h3>
+                            <p class="app-description">
+                                シンプルなタスク管理アプリ。日付指定、連続達成ストリーク表示、完全クライアントサイド動作でログイン不要。
+                            </p>
+                            <div class="app-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">LocalStorage</span>
+                            </div>
+                            <div class="app-features">
+                                <div class="feature">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>日付管理</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-fire"></i>
+                                    <span>ストリーク機能</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-user-slash"></i>
+                                    <span>ログイン不要</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="videos">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">02</span>
+                    <span class="title-text">AI Video Content</span>
+                </h2>
+                
+                <div class="videos-grid">
+                    <article class="video-card" data-video="digital-nomad">
+                        <div class="video-player">
+                            <iframe src="https://player.vimeo.com/video/1088311397?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                                    title="デジタルノマドとは？">
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title">デジタルノマドとは？</h3>
+                            <p class="video-description">
+                                AIを活用して制作した、デジタルノマドのライフスタイルを紹介する動画コンテンツ。
+                                現代の働き方の変化とリモートワークの可能性を探求しています。
+                            </p>
+                            <div class="video-features">
+                                <div class="feature">
+                                    <i class="fas fa-robot"></i>
+                                    <span>AI制作</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-play"></i>
+                                    <span>動画コンテンツ</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-globe"></i>
+                                    <span>ライフスタイル</span>
+                                </div>
+                            </div>
+                            <div class="video-actions">
+                                <a href="https://vimeo.com/1088311397" target="_blank" class="video-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Vimeoで視聴
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="video-card" data-video="ai-content">
+                        <div class="video-player">
+                            <iframe src="https://player.vimeo.com/video/1089477232?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                                    frameborder="0" 
+                                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write" 
+                                    title="AI動画コンテンツ">
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title">AI動画コンテンツ</h3>
+                            <p class="video-description">
+                                最新のAI技術を駆使して制作した実験的な動画作品。
+                                創造性とテクノロジーの融合による新しい表現の可能性を追求しています。
+                            </p>
+                            <div class="video-features">
+                                <div class="feature">
+                                    <i class="fas fa-brain"></i>
+                                    <span>AI技術</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-video"></i>
+                                    <span>実験的作品</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>創造性</span>
+                                </div>
+                            </div>
+                            <div class="video-actions">
+                                <a href="https://vimeo.com/1089477232" target="_blank" class="video-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Vimeoで視聴
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-number">03</span>
+                    <span class="title-text">About My Work</span>
+                </h2>
+                <div class="about-content">
+                    <p class="about-text">
+                        <strong>Vibe Coding</strong>の手法で開発したWebアプリケーションと、
+                        <strong>AI技術</strong>を活用した動画コンテンツ制作を通じて、
+                        テクノロジーと創造性の新しい可能性を探求しています。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Apps</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Videos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Possibilities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Yuta's Portfolio. Built with Vibe Coding.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/yuta-884" target="_blank">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
