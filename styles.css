@@ -328,6 +328,11 @@ body {
     font-size: 4rem;
     z-index: 2;
     position: relative;
+    transition: transform 0.3s ease;
+}
+
+.app-card:hover .app-icon {
+    transform: translateY(-20px);
 }
 
 .app-overlay {
@@ -338,9 +343,10 @@ body {
     bottom: 0;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 1rem;
+    padding-bottom: 2rem;
     opacity: 0;
     transition: all 0.3s ease;
 }
@@ -384,8 +390,34 @@ body {
 
 .app-description {
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     line-height: 1.6;
+}
+
+.app-development {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.ai-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ai-tag {
+    padding: 0.25rem 0.75rem;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
 .app-tech {
